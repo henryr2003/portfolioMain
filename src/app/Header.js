@@ -17,10 +17,17 @@ import tailwind from "../img/tailwind.svg";
 import nextLogo from "../img/nextLogo.svg";
 import motionLogo from "../img/motionLogo.svg";
 
+import { useMediaQuery } from "./hooks/useMediaQuery";
+
 export default function Header({ handleScroll }) {
+
+    const isMobile = useMediaQuery("(max-width: 768px)");
+
     return (
         <>
-            <header className="w-full h-[100vh] bg-gray-800 flex flex-col justify-center  ">
+
+
+            <header className="w-full h-[1800px] bg-gray-800 flex flex-col justify-start  md:justify-center md:h-[100vh] ">
                 <motion.div
                     className="border-1 h-1 w-1 bg-white"
                     initial={{
@@ -42,7 +49,7 @@ export default function Header({ handleScroll }) {
                         padding: "0px",
                     }}
                     animate={{
-                        height: "85%",
+                        height: isMobile ? "200%" : "85%",
                         padding: "50px",
                     }}
                     transition={{
@@ -54,7 +61,7 @@ export default function Header({ handleScroll }) {
                     }}
                 >
                     <motion.div
-                        className="w-auto h-[70px] text-white font-mono text-3xl flex items-center"
+                        className="w-full h-[70px] text-white font-mono text-xl text-center flex justify-center items-center md:text-3xl"
                         layout
                         initial={{
                             y: "40px",
@@ -64,7 +71,7 @@ export default function Header({ handleScroll }) {
                         animate={{
                             y: "5px",
                             opacity: "100%",
-                            x: "-35vw",
+                            x: isMobile ? 0 : "-35vw",
                         }}
                         transition={{
                             y: { delay: 0.1, duration: 1, ease: "easeInOut" },
@@ -101,7 +108,7 @@ export default function Header({ handleScroll }) {
                     </motion.div>
 
                     <motion.div
-                        className="w-full h-auto flex "
+                        className="w-full h-auto flex flex-col md:flex-row"
                         initial={{
                             opacity: 0,
                         }}
@@ -118,7 +125,7 @@ export default function Header({ handleScroll }) {
                     >
                         <Image
                             alt="Image of Henry Rodas in university graduation clothing"
-                            className="border-2 mt-5 w-[600px] h-auto lg: ml-50 w-[600px] h-auto "
+                            className="border-2 mt-5 w-[600px] h-auto rounded-lg lg:ml-50  "
                             src={gradPhoto}
                         />
 
@@ -151,13 +158,13 @@ export default function Header({ handleScroll }) {
                                     src={mail}
                                 />
                             </div>
-                            <h1 className="w-[55%]">
+                            <h1 className=" w-auto md:w-[55%]">
                                 {" "}
                                 I am a cracked front-end developer who loves to
                                 make things look nice and make things work.
                             </h1>
 
-                            <div className="flex gap-15 text-black">
+                            <div className="flex gap-5 justify-center pl-5 text-black w-full md:gap-15 md:pl-0">
                                 <Image
                                     alt="html logo"
                                     className="w-auto h-20 flex items-start -translate-y-2 cursor-pointer"
@@ -170,37 +177,44 @@ export default function Header({ handleScroll }) {
                                 />
                                 <Image
                                     alt="js logo"
-                                    className="w-auto h-20 flex items-start -translate-y-2 cursor-pointer"
+                                    className="w-auto h-20 flex items-start -translate-y-2 cursor-pointer -translate-x-2 md:translate-x-0"
                                     src={js}
                                 />
                             </div>
 
-                            <div className="flex gap-15 text-black">
-                                <Image
+                            <div className="flex flex-col gap-15 text-black md:flex-row">
+                                <div className="flex gap-15 justify-center">
+                                    <Image
                                     alt="react logo"
                                     className="w-15 h-15 flex items-start -translate-y-2 cursor-pointer"
                                     src={react}
                                 />
-                                <Image
-                                    alt="next logo"
-                                    className="w-15 h-15 flex items-start -translate-y-2 cursor-pointer"
-                                    src={nextLogo}
-                                />
-                                <Image
+                                    <Image
+                                        alt="next logo"
+                                        className="w-15 h-15 flex items-start -translate-y-2 cursor-pointer"
+                                        src={nextLogo}
+                                    />
+                                </div>
+
+                                <div className="flex gap-15 justify-center">
+                                    <Image
                                     alt="tailwind logo"
                                     className="w-15 h-15 flex items-start -translate-y-2 cursor-pointer"
                                     src={tailwind}
                                 />
-                                <Image
-                                    alt=" motion"
-                                    className="w-15 h-15 flex items-start -translate-y-2 cursor-pointer"
-                                    src={motionLogo}
-                                />
-                                <Image
-                                    alt="supabase logo"
-                                    className="w-15 h-15 flex items-start -translate-y-2 cursor-pointer"
-                                    src={supabase}
-                                />
+                                    <Image
+                                        alt=" motion"
+                                        className="w-15 h-15 flex items-start -translate-y-2 cursor-pointer"
+                                        src={motionLogo}
+                                    />
+                                    <Image
+                                        alt="supabase logo"
+                                        className="w-15 h-15 flex items-start -translate-y-2 cursor-pointer"
+                                        src={supabase}
+                                    />
+
+                                </div>
+                                
                             </div>
                         </motion.div>
                     </motion.div>

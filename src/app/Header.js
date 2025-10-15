@@ -1,4 +1,4 @@
-"use client";
+'use client';
 import { motion } from "framer-motion";
 import Image from "next/image";
 import arrow from "../img/arrow.svg";
@@ -83,7 +83,7 @@ export default function Header({ handleScroll }) {
                             x: { delay: 2.25, duration: 2, ease: "easeInOut" },
                         }}
                     >
-                        <p className="">Hello, I'm Henry Rodas </p>
+                        <p className="">Hello, I&apos;m Henry Rodas </p>
                         <motion.div
                             className="flex "
                             initial={{

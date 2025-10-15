@@ -10,7 +10,7 @@ Built with **React**, **Next.js**, and **Framer Motion**
 👉 [Live Site](https://henryrodas.com)
 
 📸 Preview:  
-![App Screenshot](../portfolio/src/img/portfolioPic.png)
+![App Screenshot](./src/img/portfolioPic.png)
 
 
 ## Installation

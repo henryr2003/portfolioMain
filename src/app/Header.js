@@ -127,6 +127,7 @@ export default function Header({ handleScroll }) {
                             alt="Image of Henry Rodas in university graduation clothing"
                             className="border-2 mt-5 w-[600px] h-auto rounded-lg lg:ml-50  "
                             src={gradPhoto}
+                            priority
                         />
 
                         <motion.div
@@ -163,7 +164,7 @@ export default function Header({ handleScroll }) {
                             </div>
                             <h1 className=" w-auto md:w-[55%]">
                                 {" "}
-                                I am a cracked front-end developer who loves to
+                                I am an ambitious front-end developer who loves to
                                 make things look nice and make things work.
                             </h1>
 

@@ -141,22 +141,25 @@ export default function Header({ handleScroll }) {
                                 x: { delay: 2, duration: 2, ease: "easeInOut" },
                             }}
                         >
-                            <div className="flex gap-15 text-black">
-                                <Image
+                            <div className="flex gap-15 text-black ">
+                                <a href="https://github.com/henryr2003" target="_blank"><Image
                                     alt="Github logo"
-                                    className="w-15 h-15 cursor-pointer"
+                                    className="w-15 h-15 cursor-pointer "
                                     src={github}
-                                />
-                                <Image
+                                /> </a>
+                                <a href="https://www.linkedin.com/in/henryrodas/" target="_blank"><Image
                                     alt="LinkedIn logo"
                                     className="w-15 h-15 cursor-pointer"
                                     src={linkedIn}
                                 />
-                                <Image
+                                </a>
+                                <a href="mailto:henryrodas2003@gmail.com" target="_blank"><Image
                                     alt="mail logo"
                                     className="w-auto h-20 flex items-start -translate-y-2 cursor-pointer"
                                     src={mail}
                                 />
+                                </a>
+
                             </div>
                             <h1 className=" w-auto md:w-[55%]">
                                 {" "}

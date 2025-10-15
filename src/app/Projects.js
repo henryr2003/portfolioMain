@@ -20,11 +20,11 @@ export default function Projects({projectRef}) {
   
             
 
-                <motion.div className="w-full h-auto gap-10 flex flex-col justify-center items-center  mt-50 md:flex-row md:pl-20 md:gap-30 md:h-[700px]"
+                <motion.div className="w-full h-auto gap-10 flex flex-col justify-center items-center  mt-50 md:flex-row md:pl-20 md:gap-20 md:h-[700px]"
                 
                 initial={{
                     opacity: 0,
-                    x: "-100px",
+                    x: "-300px",
                 }}
                 
                 whileInView={{
@@ -50,11 +50,11 @@ export default function Projects({projectRef}) {
 
                     {isMobile && <h1 className="text-md text-white md:text-4xl"> Personal Portfolio Website </h1> }
 
-                    <Image alt="Image of this portfolio website" src={portfolioPic} className="w-[90%] h-auto border-2 border-white md:w-auto md:h-[600px] "/>
+                    <Image alt="Image of this portfolio website" src={portfolioPic} className="w-[90%] h-auto border-2 border-white md:w-auto md:h-[80%] "/>
 
                 
 
-                    <div className=" w-[90%] text-center h-auto mb-20 text-white md:w-[600px] md:h-[600px]">
+                    <div className=" w-[90%] text-center h-auto mb-20 text-white md:w-[600px] md:h-[600px] lg:mt-20">
 
                         {!isMobile && <h1 className="text-md mb-20 md:text-4xl"> Personal Portfolio Website </h1> }
                         <h2 className="text-sm leading-loose md:text-2xl"> My first time using Next.js and Framer Motion for smooth animations. Learned lots about motion and UI/UX and will use what I learned in future projects.</h2>
@@ -63,11 +63,11 @@ export default function Projects({projectRef}) {
                 </motion.div>
 
 
-                <motion.div className="w-full h-auto flex mb-20 justify-center items-center text-center flex-col md:flex-row md:gap-30 md:pr-20 md:h-[700px] "
+                <motion.div className="w-full h-auto flex mb-20 justify-center items-center text-center flex-col md:flex-row md:gap-20 md:pr-20 md:h-[700px] "
                 
                 initial={{
                     opacity: 0,
-                    x: "100px",
+                    x: "300px",
                 }}
 
                 whileInView={{
@@ -97,7 +97,7 @@ export default function Projects({projectRef}) {
                         
                     </div>
 
-                    <Image alt="Image of veterinary website" src={vet}className="w-[90%] h-auto border-2 border-white md:w-auto md:h-[600px]"/>
+                    <Image alt="Image of veterinary website" src={vet}className="w-[90%] h-auto border-2 border-white md:w-auto md:h-[80%]"/>
                     
 
                     

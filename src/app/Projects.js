@@ -91,8 +91,8 @@ export default function Projects({projectRef}) {
                     <div className="w-[90%] h-auto  text-white md:w-[600px] ">
 
                         <h1 className="text-md  mb-20 md:text-4xl"> Veterinary Clinic Waitlist </h1>
-                        <h2 className="text-md  leading-loose md:text-2xl"> Waitlist for customers who are waiting for their pets' surgery. Gives them updates on their pet's progress and lets them know estimated finish times. Also
-                        has login functionality for staff so that they can add and edit information about customers' pets. 
+                        <h2 className="text-md  leading-loose md:text-2xl"> Waitlist for customers who are waiting for their pets&apos; surgery. Gives them updates on their pet&apos;s progress and lets them know estimated finish times. Also
+                        has login functionality for staff so that they can add and edit information about customers&apos; pets. 
                         </h2>
                         
                     </div>

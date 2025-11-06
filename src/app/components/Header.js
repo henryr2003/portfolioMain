@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import arrow from "../img/arrow.svg";
@@ -17,16 +17,13 @@ import tailwind from "../img/tailwind.svg";
 import nextLogo from "../img/nextLogo.svg";
 import motionLogo from "../img/motionLogo.svg";
 
-import { useMediaQuery } from "./hooks/useMediaQuery";
+import { useMediaQuery } from "../hooks/useMediaQuery";
 
 export default function Header({ handleScroll }) {
-
     const isMobile = useMediaQuery("(max-width: 768px)");
 
     return (
         <>
-
-
             <header className="w-full h-[1800px] bg-gray-800 flex flex-col justify-start  md:justify-center md:h-[100vh] ">
                 <motion.div
                     className="border-1 h-1 w-1 bg-white"
@@ -82,8 +79,13 @@ export default function Header({ handleScroll }) {
                             },
                             x: { delay: 2.25, duration: 2, ease: "easeInOut" },
                         }}
-                    >
-                        <p className="">Hello, I&apos;m Henry Rodas </p>
+                    >   
+                        <div className="flex gap-5">
+                            <h2> Hello, I&apos;m </h2>  
+                            <h1> Henry Rodas </h1>
+
+                        </div>
+
                         <motion.div
                             className="flex "
                             initial={{
@@ -143,30 +145,42 @@ export default function Header({ handleScroll }) {
                             }}
                         >
                             <div className="flex gap-15 text-black ">
-                                <a href="https://github.com/henryr2003" target="_blank"><Image
-                                    alt="Github logo"
-                                    className="w-15 h-15 cursor-pointer "
-                                    src={github}
-                                /> </a>
-                                <a href="https://www.linkedin.com/in/henryrodas/" target="_blank"><Image
-                                    alt="LinkedIn logo"
-                                    className="w-15 h-15 cursor-pointer"
-                                    src={linkedIn}
-                                />
+                                <a
+                                    href="https://github.com/henryr2003"
+                                    target="_blank"
+                                >
+                                    <Image
+                                        alt="Github logo"
+                                        className="w-15 h-15 cursor-pointer "
+                                        src={github}
+                                    />{" "}
                                 </a>
-                                <a href="mailto:henryrodas2003@gmail.com" target="_blank"><Image
-                                    alt="mail logo"
-                                    className="w-auto h-20 flex items-start -translate-y-2 cursor-pointer"
-                                    src={mail}
-                                />
+                                <a
+                                    href="https://www.linkedin.com/in/henryrodas/"
+                                    target="_blank"
+                                >
+                                    <Image
+                                        alt="LinkedIn logo"
+                                        className="w-15 h-15 cursor-pointer"
+                                        src={linkedIn}
+                                    />
                                 </a>
-
+                                <a
+                                    href="mailto:henryrodas2003@gmail.com"
+                                    target="_blank"
+                                >
+                                    <Image
+                                        alt="mail logo"
+                                        className="w-auto h-20 flex items-start -translate-y-2 cursor-pointer"
+                                        src={mail}
+                                    />
+                                </a>
                             </div>
-                            <h1 className=" w-auto md:w-[55%]">
+                            <h2 className=" w-auto md:w-[55%]">
                                 {" "}
-                                I am an ambitious front-end developer who loves to
-                                make things look nice and make things work.
-                            </h1>
+                                I am an ambitious front-end developer who loves
+                                to make things look nice and make things work.
+                            </h2>
 
                             <div className="flex gap-5 justify-center pl-5 text-black w-full md:gap-15 md:pl-0">
                                 <Image
@@ -189,10 +203,10 @@ export default function Header({ handleScroll }) {
                             <div className="flex flex-col gap-15 text-black md:flex-row">
                                 <div className="flex gap-15 justify-center">
                                     <Image
-                                    alt="react logo"
-                                    className="w-15 h-15 flex items-start -translate-y-2 cursor-pointer"
-                                    src={react}
-                                />
+                                        alt="react logo"
+                                        className="w-15 h-15 flex items-start -translate-y-2 cursor-pointer"
+                                        src={react}
+                                    />
                                     <Image
                                         alt="next logo"
                                         className="w-15 h-15 flex items-start -translate-y-2 cursor-pointer"
@@ -202,10 +216,10 @@ export default function Header({ handleScroll }) {
 
                                 <div className="flex gap-15 justify-center">
                                     <Image
-                                    alt="tailwind logo"
-                                    className="w-15 h-15 flex items-start -translate-y-2 cursor-pointer"
-                                    src={tailwind}
-                                />
+                                        alt="tailwind logo"
+                                        className="w-15 h-15 flex items-start -translate-y-2 cursor-pointer"
+                                        src={tailwind}
+                                    />
                                     <Image
                                         alt=" motion"
                                         className="w-15 h-15 flex items-start -translate-y-2 cursor-pointer"
@@ -216,9 +230,7 @@ export default function Header({ handleScroll }) {
                                         className="w-15 h-15 flex items-start -translate-y-2 cursor-pointer"
                                         src={supabase}
                                     />
-
                                 </div>
-                                
                             </div>
                         </motion.div>
                     </motion.div>

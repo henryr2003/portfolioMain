@@ -46,7 +46,7 @@ export default function Header({ handleScroll }) {
                         padding: "0px",
                     }}
                     animate={{
-                        height: isMobile ? "200%" : "85%",
+                        height: isMobile ? "200%" : "100%",
                         padding: "50px",
                     }}
                     transition={{
@@ -127,13 +127,13 @@ export default function Header({ handleScroll }) {
                     >
                         <Image
                             alt="Image of Henry Rodas in university graduation clothing"
-                            className="border-2 mt-5 w-[600px] h-auto rounded-lg lg:ml-50  "
+                            className="border-2 mt-5 w-[450px] h-auto rounded-lg lg:ml-50 3xl:w-[600px]  "
                             src={gradPhoto}
                             priority
                         />
 
                         <motion.div
-                            className=" flex flex-col items-center gap-30 text-white font-mono text-2xl pt-25 lg: w-[auto] "
+                            className=" flex flex-col items-center gap-15 text-white font-mono text-2xl pt-25 lg:w-[auto] 3xl:gap-25"
                             initial={{
                                 x: "1000px",
                             }}
@@ -176,11 +176,14 @@ export default function Header({ handleScroll }) {
                                     />
                                 </a>
                             </div>
-                            <h2 className=" w-auto md:w-[55%]">
+                            <h2 className=" w-auto md:w-[65%] 3xl:w-[55%]">
                                 {" "}
                                 I am an ambitious front-end developer who loves
                                 to make things look nice and make things work.
                             </h2>
+
+                            
+
 
                             <div className="flex gap-5 justify-center pl-5 text-black w-full md:gap-15 md:pl-0">
                                 <Image

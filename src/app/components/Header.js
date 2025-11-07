@@ -24,7 +24,7 @@ export default function Header({ handleScroll }) {
 
     return (
         <>
-            <header className="w-full h-[1800px] bg-gray-800 flex flex-col justify-start  md:justify-center md:h-[100vh] ">
+            <header className="w-full h-[1550px] bg-gray-800 flex flex-col justify-start  md:justify-center md:h-[100vh] ">
                 <motion.div
                     className="border-1 h-1 w-1 bg-white"
                     initial={{
@@ -46,7 +46,7 @@ export default function Header({ handleScroll }) {
                         padding: "0px",
                     }}
                     animate={{
-                        height: isMobile ? "200%" : "100%",
+                        height: isMobile ? "auto" : "100%",
                         padding: "50px",
                     }}
                     transition={{
@@ -133,7 +133,7 @@ export default function Header({ handleScroll }) {
                         />
 
                         <motion.div
-                            className=" flex flex-col items-center gap-15 text-white font-mono text-2xl pt-25 lg:w-[auto] 3xl:gap-25"
+                            className=" flex flex-col items-center gap-15 text-white font-mono text-2xl pt-15 md:pt-25 lg:w-[auto] 3xl:gap-25"
                             initial={{
                                 x: "1000px",
                             }}
@@ -144,6 +144,11 @@ export default function Header({ handleScroll }) {
                                 x: { delay: 2, duration: 2, ease: "easeInOut" },
                             }}
                         >
+                            {isMobile && <h2 className=" w-auto md:w-[65%] 3xl:w-[55%]">
+                                {" "}
+                                I am an ambitious front-end developer who loves
+                                to make things look nice and make things work.
+                            </h2>}
                             <div className="flex gap-15 text-black ">
                                 <a
                                     href="https://github.com/henryr2003"
@@ -176,11 +181,13 @@ export default function Header({ handleScroll }) {
                                     />
                                 </a>
                             </div>
-                            <h2 className=" w-auto md:w-[65%] 3xl:w-[55%]">
+
+                            {!isMobile && <h2 className=" w-auto md:w-[65%] 3xl:w-[55%]">
                                 {" "}
                                 I am an ambitious front-end developer who loves
                                 to make things look nice and make things work.
-                            </h2>
+                            </h2>}
+                            
 
                             
 

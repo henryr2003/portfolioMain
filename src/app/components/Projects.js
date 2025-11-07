@@ -14,7 +14,7 @@ export default function Projects({ projectRef }) {
         <>
             <main
                 ref={projectRef}
-                className="w-full h-auto relative overflow-hidden flex flex-col gap-15 pb-50 items-center sm:items-start bg-gray-800 font-mono 3xl:gap-[32px] "
+                className="w-full h-auto pt-10 relative overflow-hidden flex flex-col gap-10 md:pb-50 items-center sm:items-start bg-gray-800 font-mono 3xl:gap-[32px] "
             >
 
 
@@ -32,7 +32,7 @@ export default function Projects({ projectRef }) {
                         default: { duration: 1.5, ease: "easeInOut" },
                     }}
                     viewport={{
-                        amount: 0.3,
+                        amount: 0.2,
                         once: true,
                     }}
                 >
@@ -46,7 +46,7 @@ export default function Projects({ projectRef }) {
                         <Image
                         alt="Image of this portfolio website"
                         src={portfolioPic}
-                        className="w-auto h-[600px] border-2 border-white md:h-[400px] 3xl:h-[600px]  "
+                        className="w-auto h-[200px] border-2 border-white md:h-[400px] 3xl:h-[600px]  "
                         />
               
                     
@@ -88,7 +88,7 @@ export default function Projects({ projectRef }) {
                     }}
                 >
                     <div className=" w-[90%] text-center h-auto  text-white md:w-[600px] md:h-[400px] 3xl:h-[600px]  ">
-                        <h3 className="text-md  mb-20 md:text-2xl 3xl:text-4xl">
+                        <h3 className="text-md  mb-10 md:text-2xl 3xl:text-4xl">
                          
                             Veterinary Clinic Waitlist
                         </h3>
@@ -106,7 +106,7 @@ export default function Projects({ projectRef }) {
                     <Image
                         alt="Image of veterinary website"
                         src={vet}
-                        className="w-auto h-[600px] border-2 border-white md:h-[400px] 3xl:h-[600px] "
+                        className="w-auto h-[200px] border-2 border-white md:h-[400px] 3xl:h-[600px] "
                     />
                 </motion.div>
             </main>

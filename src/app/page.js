@@ -95,18 +95,18 @@ export default function Home() {
 
             <Projects projectRef={projectRef} />
 
-            <footer className="w-full h-[50vh] bg-gray-800 text-white font-mono flex justify-center gap-50">
-                <div className="w-[600px]">
+            <footer className="w-full h-[100vh] items-center bg-gray-800 text-white font-mono flex flex-col md:flex-row justify-center gap-10 md:gap-50">
+                <div className="  w-90 md:w-[600px] text-center">
                     <h2 className=" flex justify-center text-4xl mb-15">
                         {" "}
                         Contact Me{" "}
                     </h2>
-                    <h3 className="text-2xl mb-5">
+                    <h3 className=" text-lg md:text-2xl mb-5">
                         {" "}
                         If you would like to ask me any questions or set up a
                         meeting with me, I would be glad to!
                     </h3>
-                    <h3 className="text-2xl">
+                    <h3 className="text-lg md:text-2xl">
                         Enter your information in the form or send an email to
                         henryrodas2003@gmail.com
                     </h3>
@@ -114,7 +114,7 @@ export default function Home() {
 
                 <form
                     onSubmit={handleSubmit}
-                    className="w-[20%] h-[400px] flex flex-col justify-center items-center gap-5 border-1 border-white bg-gray-500 rounded-4xl"
+                    className="w-90  md:w-[20%] h-[400px] flex flex-col justify-center items-center gap-5 border-1 border-white bg-gray-500 rounded-4xl"
                     action="https://formspree.io/f/mgvnrogb"
                     method="POST"
                 >

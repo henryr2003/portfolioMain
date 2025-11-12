@@ -95,7 +95,7 @@ export default function Home() {
 
             <Projects projectRef={projectRef} />
 
-            <footer className="w-full h-[100vh] items-center bg-gray-800 text-white font-mono flex flex-col md:flex-row justify-center gap-10 md:gap-50">
+            <footer className="w-full h-[100vh] items-center bg-gray-800 text-white font-mono flex flex-col md:flex-row justify-center gap-10 md:gap-50 md:h-auto">
                 <div className="  w-90 md:w-[600px] text-center">
                     <h2 className=" flex justify-center text-4xl mb-15">
                         {" "}

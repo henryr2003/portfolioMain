@@ -146,20 +146,10 @@ export default function Header({ handleScroll }) {
                         >
                             {isMobile && <h2 className=" w-auto md:w-[65%] 3xl:w-[55%]">
                                 {" "}
-                                I am an ambitious front-end developer who loves
-                                to make things look nice and make things work.
+                                IT Support professional with a background in Computer Science & Engineering and 
+                                a passion for troubleshooting, technology, and helping users solve technical problems.
                             </h2>}
                             <div className="flex gap-15 text-black ">
-                                <a
-                                    href="https://github.com/henryr2003"
-                                    target="_blank"
-                                >
-                                    <Image
-                                        alt="Github logo"
-                                        className="w-15 h-15 cursor-pointer "
-                                        src={github}
-                                    />{" "}
-                                </a>
                                 <a
                                     href="https://www.linkedin.com/in/henryrodas/"
                                     target="_blank"
@@ -168,7 +158,8 @@ export default function Header({ handleScroll }) {
                                         alt="LinkedIn logo"
                                         className="w-15 h-15 cursor-pointer"
                                         src={linkedIn}
-                                    />
+                                        
+                                    />{" "}
                                 </a>
                                 <a
                                     href="mailto:henryrodas2003@gmail.com"
@@ -180,12 +171,23 @@ export default function Header({ handleScroll }) {
                                         src={mail}
                                     />
                                 </a>
+                                <a
+                                    href="https://github.com/henryr2003"
+                                    target="_blank"
+                                >
+                                    <Image
+                                        alt="Github logo"
+                                        className="w-15 h-15 cursor-pointer "
+                                        src={github}
+                                        
+                                    />
+                                </a>
                             </div>
 
                             {!isMobile && <h2 className=" w-auto md:w-[65%] 3xl:w-[55%]">
                                 {" "}
-                                I am an ambitious front-end developer who loves
-                                to make things look nice and make things work.
+                                IT Support professional with a background in Computer Science & Engineering and a passion 
+                                for troubleshooting, technology, and helping users solve technical problems.
                             </h2>}
                             
 

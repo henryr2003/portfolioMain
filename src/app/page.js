@@ -13,7 +13,7 @@ export default function Home() {
         "@context": "https://schema.org",
         "@type": "Person",
         name: "Henry Rodas",
-        jobTitle: "Front-End Developer",
+        jobTitle: "IT Support & CompTIA A+ ",
         url: "https://henryrodas.com",
         sameAs: [
             "https://www.linkedin.com/in/henryrodas",

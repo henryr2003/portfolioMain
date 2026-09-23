@@ -13,23 +13,29 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
     title: {
-        default: "Henry Rodas | Front-end Developer",
+        default: "Henry Rodas | IT Support & CompTIA A+",
         template: "%s | Henry Rodas",
     },
     description:
-        "Portfolio of Henry Rodas - A Front-end Developer who specializes in React, Next.js, and Framer Motion",
+        "An IT Support portfolio featuring hands-on experience with Active Directory, Windows Server, Proxmox, networking, troubleshooting, and homelab projects.",
 
     alternates: { canonical: "https://henryrodas.com" },
 
     openGraph: {
-        title: "Henry Rodas — Front-End Developer",
+        title: "Henry Rodas — IT Support & CompTIA A+",
         url: "https://henryrodas.com",
         type: "website",
+        description:
+        "An IT Support portfolio featuring hands-on experience with Active Directory, Windows Server, Proxmox, networking, troubleshooting, and homelab projects.",
+
     },
 
     twitter: {
         card: "summary_large_image",
-        title: "Henry Rodas — Front-End Developer",
+        title: "Henry Rodas — IT Support & CompTIA A+",
+        description:
+        "An IT Support portfolio featuring hands-on experience with Active Directory, Windows Server, Proxmox, networking, troubleshooting, and homelab projects.",
+
     },
 };
 
